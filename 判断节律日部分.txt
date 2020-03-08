@@ -1,0 +1,54 @@
+
+#include<stdio.h>
+int main()
+{
+
+
+int y1,y2,y3，tianshu;  //定义变量
+ 
+y1=tianshu%23;    //求余，y1为体力节律，y2为情绪节律，y3为智力节律 
+y2=tianshu%28;
+y3=tianshu%33;
+
+if(y1==0)      //判断体力所处时期 
+printf("体力刚好为周期日\n");
+
+if(y1>=1&&y1<12)
+printf("体力处在高潮期第%d天\n",y1);
+
+if(y1==12)
+printf("体力刚好处在临界日\n");
+
+if(y1>12)
+printf("体力处在低潮期第%d天\n",y1-12);
+
+
+ 
+if(y2==0)      //判断情绪所处时期 
+printf("情绪刚好为周期日\n");
+
+if(y2>=1&&y1<14)
+printf("情绪处在高潮期第%d天\n",y2);
+
+if(y2==14)
+printf("情绪刚好处在临界日\n");
+
+if(y2>14)
+printf("情绪处在低潮期第%d天\n",y2-14);
+
+
+ if(y3==0)      //判断智力所处时期 
+printf("智力刚好为周期日\n");
+
+if(y3>=1&&y3<17)
+printf("智力处在高潮期第%d天\n",y3);
+
+if(y3==17)
+printf("智力刚好处在临界日\n");
+
+if(y3>17)
+printf("智力处在低潮期第%d天\n",y1-17);
+ 
+return 0;	 
+	
+}
